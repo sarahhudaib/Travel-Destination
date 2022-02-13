@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Tours from '../../components/tours';
-
+import Data from "./data/db";
 
 function Home() {
 
@@ -10,7 +10,7 @@ function Home() {
     <main>
       <Header />
 
-      <Tours />
+      <Tours data={Data}/>
 
       <Footer />
     </main>

@@ -6,7 +6,8 @@ function Tours() {
 
   return (
       <div>
-        {Data.map((d, i) => {
+        {
+        Data.map((d, i) => {
           const { name, image } = d;
 
           return (
@@ -21,7 +22,8 @@ function Tours() {
             </div>
           )
         }
-        )}
+        )
+        }
       </div>
   );
 }

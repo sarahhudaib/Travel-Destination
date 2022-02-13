@@ -6,3 +6,8 @@ footer {
     text-align: center;
     padding: 15px;
   }
+
+  a {
+    text-decoration: underline;
+    color: white;
+  }
