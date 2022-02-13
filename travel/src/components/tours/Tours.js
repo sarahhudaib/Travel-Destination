@@ -14,7 +14,7 @@ export default function Tours(props) {
             <img src={toursProps.image} alt=' ' />
             </div>
             <>
-           
+          
             </>
          
           </>
