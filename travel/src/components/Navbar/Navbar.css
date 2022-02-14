@@ -1,0 +1,14 @@
+div {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 16px;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+
+  
