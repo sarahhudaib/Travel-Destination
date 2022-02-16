@@ -1,26 +1,21 @@
-import './App.css';
-import BrowserRouter from "react-router-dom";
-import Route from "react-router-dom";
-import Redirect  from "react-router-dom";
+// import './App.css';
+import data from './data/db.json'
 import Home from './components/home/Home';
-import Footer from './components/footer/Footer'
-import Navbar from './components/navbar/Navbar'
 import TourDetails from './components/TourDetails/TourDetails';
+import {Route, Routes} from "react-router-dom";
 
-function App() {
+export default function App() {
+  console.log(data);
   return (
-    // <>
-    //   <Home />
-    // </>
+    
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-          <Route path="/" render={props => <Home {...props} />} />
-          <Route path="/TourDetails/:id" render={props => <TourDetails {...props} />} />
-          <Redirect from="*" to="/" />
-        <Footer />
-      </BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home data={data.data} />}/>
+          <Route path="/tour/:id" element={<TourDetails data={data.data} />} />
+          
+      </Routes>
+       
     </div>
   );
 }
-export default App;
+

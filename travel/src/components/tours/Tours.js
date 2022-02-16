@@ -1,63 +1,21 @@
-import React from 'react';
-import './Tours.css';
-import Tour from "./tour"
+import React from "react";
 import { Link } from "react-router-dom";
+import Tour from "./tour/Tour";
+// import "./Tours.css";
 
-
-export default function Tours(props) {
-
+const Tours = ({ data }) => {
+  console.log(data);
   return (
     <div>
-      <p>Hello, Welcome to this app!</p>
-      <div>
-        {/* to create 3 new parameters (id, name & image) then store them inside state using props */}
-        {props.data.map((state, index) => {
-          const { id, name, image } = state;
-
-        // pass the data to the <Tour/ tour={tour} > from data/db.json 
-          return (
-            <Link to={`/state/${id}`}>
-              <Tour name={name} image={image} key={index} />
-            </Link>
-          )
-        }
-        )}
-      </div>
+      {data.map((tour) => (
+        <div className="tour-preview" key={tour.id}>
+          <Link to={`/tour/${tour.id}`}>
+            <Tour tour={tour} />
+          </Link>
+        </div>
+      ))}
     </div>
   );
-}
+};
 
-
-// export default function Tours(props) {
-
-//   return (
-//      <div id="1">
-//       <h1>
-//         Hello, Welcome to this app!
-//       </h1>
-//      <div id="2">
-//       {props.data.map((toursProps,i) => {
-//         const id=toursProps;
-//         return (
-//           <>
-//             <div>
-//               Name : {toursProps.name}
-//              </div>
-//              <div>
-//             <img src={toursProps.image} alt=' ' />
-//             </div>
-            
-//             return (
-//             <Link to={`/toursProps/${id}`}> <Tour key={i} /></Link>
-//             )
-//             </>
-
-//         );
-//       })}
-//     </div>
-//     </div>
-//   );
-// }
-
-
- 
+export default Tours;

@@ -5,13 +5,13 @@ import './Navbar.css';
 export default function Navbar() {
 
   return (
-    <header>
-        <div>
-          <Link to="/">
-            Home
-          </Link>
-          </div>
-
-    </header >
+    <>
+    <nav className='nnnnnn'>
+      <Link to='/'>Home</Link>
+      <br />
+      <Link to='/city/:id'>FaVCity</Link>
+    </nav>
+    <h1 className='aaaaaa'>Travel App</h1>
+  </>
   );
 }

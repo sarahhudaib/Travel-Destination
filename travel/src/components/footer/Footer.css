@@ -1,7 +1,7 @@
 footer {
     overflow: hidden;
     background-color: #000000;
-    color: white;
+    color: rgb(248, 244, 244);
     display: block;
     text-align: center;
     padding: 15px;
@@ -9,5 +9,9 @@ footer {
 
   a {
     text-decoration: underline;
-    color: white;
+    color: rgb(8, 7, 7);
+  }
+
+  div {
+    color: rgb(17, 17, 17);
   }

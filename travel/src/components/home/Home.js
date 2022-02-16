@@ -1,19 +1,16 @@
-import React from 'react';
-import Header from '../header/Header';
-// import Footer from '../footer/Footer';
-import Tours from '../tours/Tours';
-// import Data from "../../data/db.json";
-import Navbar from '../Navbar/Navbar'
+import Header from "../header/Header";
+import Tours from "../tours/Tours";
+import Footer from "../footer/Footer";
+import "./Home.css";
 
-function Home() {
-
+export default function Home(props) {
   return (
-    <main>
-    <Header />
-    <Navbar/>
+    <div>
+      <Header />
 
-    <Tours />
-  </main>
+      <Tours data={props.data} />
+
+      <Footer />
+    </div>
   );
 }
-export default Home;

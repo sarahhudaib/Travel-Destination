@@ -1,14 +1,18 @@
-div {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 16px;
-  }
-
-  header {
-    position: fixed;
-    width: 100%;
-  }
-
+.nnnnnn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border-style: inset;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.aaaaaa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   

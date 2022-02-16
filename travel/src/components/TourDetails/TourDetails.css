@@ -1,0 +1,9 @@
+.showText {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .doMore{
+    height:4.5em;
+    overflow:hidden;
+  }
